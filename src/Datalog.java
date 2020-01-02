@@ -75,7 +75,7 @@ public class Datalog {
 				if (!val.equals(arg.getValue())) {
 					return null;
 				} else {
-					continue; // BUG possibility: perform break instead
+					break; // BUG possibility: perform break instead
 				}
 			} else {
 				s = s.extend(arg.getVariable(), val);
